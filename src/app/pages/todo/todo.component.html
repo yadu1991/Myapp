@@ -1,0 +1,19 @@
+<!-- 
+@for (item of todos; track item.id) {
+    <p>{{item.title}}</p>
+}
+-->
+
+<div class="container">
+    <div class="form">
+        <input type="text" value="test" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+        <script src="../../../assets/ExampleToDo.JS" ></script>
+    </div>
+    @for (item of todos; track item.id) {
+      <!--  <p>{{item.title}}</p> --> 
+      <div class="tasks">{{item.title}}</div>
+    }
+    
+    <div class="delete-all">Delete all</div>
+    </div>
